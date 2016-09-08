@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "CaptainSmackDown2", "CaptainSmackDown2\CaptainSmackDown2.sfproj", "{96D2FD88-39F9-4A8B-9A4E-FC82E05D87A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaptainSmackDown2.Api", "CaptainSmackDown2.Api\CaptainSmackDown2.Api.csproj", "{EEEB4576-959B-4769-9B82-7842CBB1C324}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaptainSmackDown2.BackEnd", "CaptainSmackDown2.BackEnd\CaptainSmackDown2.BackEnd.csproj", "{15985918-D382-4D94-AE8A-2D4846D149C8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{96D2FD88-39F9-4A8B-9A4E-FC82E05D87A9}.Debug|x64.ActiveCfg = Debug|x64
+		{96D2FD88-39F9-4A8B-9A4E-FC82E05D87A9}.Debug|x64.Build.0 = Debug|x64
+		{96D2FD88-39F9-4A8B-9A4E-FC82E05D87A9}.Debug|x64.Deploy.0 = Debug|x64
+		{96D2FD88-39F9-4A8B-9A4E-FC82E05D87A9}.Release|x64.ActiveCfg = Release|x64
+		{96D2FD88-39F9-4A8B-9A4E-FC82E05D87A9}.Release|x64.Build.0 = Release|x64
+		{96D2FD88-39F9-4A8B-9A4E-FC82E05D87A9}.Release|x64.Deploy.0 = Release|x64
+		{EEEB4576-959B-4769-9B82-7842CBB1C324}.Debug|x64.ActiveCfg = Debug|x64
+		{EEEB4576-959B-4769-9B82-7842CBB1C324}.Debug|x64.Build.0 = Debug|x64
+		{EEEB4576-959B-4769-9B82-7842CBB1C324}.Release|x64.ActiveCfg = Release|x64
+		{EEEB4576-959B-4769-9B82-7842CBB1C324}.Release|x64.Build.0 = Release|x64
+		{15985918-D382-4D94-AE8A-2D4846D149C8}.Debug|x64.ActiveCfg = Debug|x64
+		{15985918-D382-4D94-AE8A-2D4846D149C8}.Debug|x64.Build.0 = Debug|x64
+		{15985918-D382-4D94-AE8A-2D4846D149C8}.Release|x64.ActiveCfg = Release|x64
+		{15985918-D382-4D94-AE8A-2D4846D149C8}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
