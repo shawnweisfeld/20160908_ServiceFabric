@@ -1,32 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ApplicationManifest xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ApplicationTypeName="CaptainSmackDown2Type" ApplicationTypeVersion="1.0.0" xmlns="http://schemas.microsoft.com/2011/01/fabric">
-   <Parameters>
-      <Parameter Name="BackEnd_MinReplicaSetSize" DefaultValue="2" />
-      <Parameter Name="BackEnd_PartitionCount" DefaultValue="2" />
-      <Parameter Name="BackEnd_TargetReplicaSetSize" DefaultValue="3" />
-      <Parameter Name="Api_InstanceCount" DefaultValue="-1" />
-   </Parameters>
-   <ServiceManifestImport>
-      <ServiceManifestRef ServiceManifestName="CaptainSmackDown2.BackEndPkg" ServiceManifestVersion="1.0.0" />
-      <ConfigOverrides />
-   </ServiceManifestImport>
-   <ServiceManifestImport>
-      <ServiceManifestRef ServiceManifestName="CaptainSmackDown2.ApiPkg" ServiceManifestVersion="1.0.0" />
-      <ConfigOverrides />
-   </ServiceManifestImport>
-   <DefaultServices>
-      <Service Name="BackEnd">
-         <StatefulService ServiceTypeName="BackEndType" TargetReplicaSetSize="[BackEnd_TargetReplicaSetSize]" MinReplicaSetSize="[BackEnd_MinReplicaSetSize]">
-            <NamedPartition>
-               <Partition Name="Starship" />
-               <Partition Name="CrabBoat" />
-            </NamedPartition>
-         </StatefulService>
-      </Service>
-      <Service Name="Api">
-         <StatelessService ServiceTypeName="ApiType" InstanceCount="[Api_InstanceCount]">
-            <SingletonPartition />
-         </StatelessService>
-      </Service>
-   </DefaultServices>
+  <Parameters>
+    <Parameter Name="BackEnd_MinReplicaSetSize" DefaultValue="2" />
+    <Parameter Name="BackEnd_PartitionCount" DefaultValue="2" />
+    <Parameter Name="BackEnd_TargetReplicaSetSize" DefaultValue="3" />
+    <Parameter Name="Api_InstanceCount" DefaultValue="-1" />
+  </Parameters>
+  <ServiceManifestImport>
+    <ServiceManifestRef ServiceManifestName="CaptainSmackDown2.BackEndPkg" ServiceManifestVersion="1.0.0" />
+    <ConfigOverrides />
+  </ServiceManifestImport>
+  <ServiceManifestImport>
+    <ServiceManifestRef ServiceManifestName="CaptainSmackDown2.ApiPkg" ServiceManifestVersion="1.0.0" />
+    <ConfigOverrides />
+  </ServiceManifestImport>
+  <DefaultServices>
+    <Service Name="BackEnd">
+      <StatefulService ServiceTypeName="BackEndType" TargetReplicaSetSize="[BackEnd_TargetReplicaSetSize]" MinReplicaSetSize="[BackEnd_MinReplicaSetSize]">
+        <NamedPartition>
+          <Partition Name="Starship" />
+          <Partition Name="CrabBoat" />
+        </NamedPartition>
+      </StatefulService>
+    </Service>
+    <Service Name="Api">
+      <StatelessService ServiceTypeName="ApiType" InstanceCount="[Api_InstanceCount]">
+        <SingletonPartition />
+      </StatelessService>
+    </Service>
+  </DefaultServices>
 </ApplicationManifest>
